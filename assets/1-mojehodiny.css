@@ -25,16 +25,13 @@ label{
 
 h1{
 	margin-top: 5rem;	/* Minimum spacing; margin-bottom is 2rem. */
-/*	clear: both;*/
 }
 #link_show{
 	padding:0 20px;	/* less padding than 30px for a standard button */
 	margin-bottom:-10rem;
 }
-/*#link_container{margin-top: 5rem;}
-#link_show{margin: 2.5rem 0;}
-@media(min-width: 768px){
-	h1{clear:none}
-	#link_show{margin:0;}
+/* Github icon: */
+#mh_footer img{
+	width: 16px; height: 16px;
+	vertical-align:top;
 }
-*/

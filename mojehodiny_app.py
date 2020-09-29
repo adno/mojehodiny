@@ -205,7 +205,7 @@ APP_MD_DESC = (
     'Přesně to umí Moje hodiny a navíc vám vytvoří i **kalendář lekcí '
     '(a volna)** do počítače nebo telefonu.'
 )
-APP_MD_FOOTER = '''Verze 0.1.23 (2020-09-29). 🐨 2020 [Adam Nohejl](http://nohejl.name/).
+APP_MD_FOOTER = '''Verze 0.1.23 (2020-09-29). 🐨 2020 [Adam Nohejl](http://nohejl.name/). Zdroják je [![GitHub](/assets/GitHub-Mark-32px.png) na GitHubu](https://github.com/adno/mojehodiny).
 
 Napsáno v Pythonu pomocí frameworku [Dash](https://dash.plotly.com/)
 bez jediné řádky JavaScriptu a jen s pár řádkami HTML, CSS a Markdownu.
@@ -399,7 +399,7 @@ app.layout = html.Div([ # container
             ], className='six columns lcol'),
         ], className='row'),
     html.Hr(),
-    dcc.Markdown(APP_MD_FOOTER, className='small-print center')
+    dcc.Markdown(APP_MD_FOOTER, className='small-print center', id='mh_footer')
     ], className='container')
 
 

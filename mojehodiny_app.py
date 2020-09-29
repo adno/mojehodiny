@@ -303,8 +303,8 @@ app.layout = html.Div([ # container
                 end_date_placeholder_text='konec',
                 min_date_allowed=dt(2020, 1, 1),
                 max_date_allowed=dt(2022, 12, 31),
-                start_date=dt(school_year_start, 9, 1),
-                end_date=dt(school_year_end, 6, 30)
+                start_date=dt(school_year_start, 9, 1).date(),
+                end_date=dt(school_year_end, 6, 30).date()
                 ),
             html.Label('Rozdělit kurz na dvě části (kalendářní roky, '
                 'semestry, …) datem:'),
@@ -634,7 +634,8 @@ def update_app(
     *args
     ):
     """
-    Update the app's main outputs based on all the inputs.
+    Update the app's main outputs (including a save/share link) based on all
+    the inputs.
     """
     show_link = link_show_timestamp > link_hide_time_stamp
     # show_link is False if both == -1 (neither clicked)
@@ -738,5 +739,5 @@ def update_app(
 
 
 if __name__ == '__main__':
-    # host='0.0.0.0' => make available on LAN
+    # host='0.0.0.0' => make available on LAN for testing
     app.run_server(debug=True, host='0.0.0.0')

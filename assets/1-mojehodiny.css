@@ -1,0 +1,40 @@
+.error{color: #d00}
+.warning{color: #e80}
+.fullwidth{width: 100%}
+.small-print{font-size: smaller}
+#custom_holidays_error, #custom_holidays_warning, #partition_date_warning{
+	padding-left:0.4em
+}
+.mh-time-range div{border-radius: 2px; border: 1px solid #dbdbdb; background-color: #fff; display:inline-block}
+.mh-time-range input{width: 4em;}
+.mh-time-range span{padding: 0 0.1em}
+.mh-time-range .error{padding: 0 0 0 0.4em}
+.center{text-align: center}
+.output{
+    margin-top: 1.5rem; /* like H2 */
+    border-radius: 4px; padding: 6px; border: 1px solid #dbdbdb; background-color: #fff /* like input fields */
+}
+label{
+    margin-top: 0.5rem; /* reasonable spacing */
+}
+
+
+/* FIXUP: single date picker clear button spacing/alignment */
+.SingleDatePickerInput__showClearDate{padding-right:37px;}
+.SingleDatePickerInput_clearDate{margin:0 2px; }
+
+h1{
+	margin-top: 5rem;	/* Minimum spacing; margin-bottom is 2rem. */
+/*	clear: both;*/
+}
+#link_show{
+	padding:0 20px;	/* less padding than 30px for a standard button */
+	margin-bottom:-10rem;
+}
+/*#link_container{margin-top: 5rem;}
+#link_show{margin: 2.5rem 0;}
+@media(min-width: 768px){
+	h1{clear:none}
+	#link_show{margin:0;}
+}
+*/

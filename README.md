@@ -1,5 +1,9 @@
 # mojehodiny
 
+A Plotly Dash web app for computing dates and numbers of classes in a course
+for the Czech republic (Czech public holidays/school year). The app can also
+generate an iCalendar calendar file.
+
 This app currently targets only Czech audience (Czech school year, holidays,
 etc.). There is a potential for internationalization/localization, but I don't
 have time or motivation for it.
